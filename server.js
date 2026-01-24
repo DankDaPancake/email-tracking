@@ -28,3 +28,11 @@ app.get('/track/open', (req, res) => {
     // Trả về cái GIF
     res.send(TRANSPARENT_GIF_BUFFER)
 })
+
+app.get('/report', (req, res) => {
+    res.json(trackingLogs)
+})
+
+app.listen(port, () => {
+    console.log(`Server Tracking đang chạy tại http://localhost:${port}`)
+})
