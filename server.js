@@ -29,6 +29,23 @@ app.get('/track/open', (req, res) => {
     res.send(TRANSPARENT_GIF_BUFFER)
 })
 
+app.get('/track/click', (req, res) => {
+    const { user, target_url } = req.query
+
+    const log = `[CLICK] Customer: ${user} | Clicked link to: ${target_url}`
+    trackingLogs.push(log)
+    console.log(log)
+
+    // Redirect user đến trang đích thật
+    // 302 (Found) hoặc 307 (Temporary Redirect)
+    if (target_url) {
+        res.redirect(target_url)
+    }
+    else {
+        res.send("Error. Không tìm thấy link đích.")
+    }
+})
+
 app.get('/report', (req, res) => {
     res.json(trackingLogs)
 })
