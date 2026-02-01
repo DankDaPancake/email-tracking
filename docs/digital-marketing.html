@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing 2025: Chiến lược & Công cụ Tối ưu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- 
+        Bảng màu: Vibrant Tech (Lấy từ tài liệu hướng dẫn)
+        - Chính: #1E3A8A (Blue 900)
+        - Phụ: #06B6D4 (Cyan 500)
+        - Nhấn: #F97316 (Orange 500)
+        - Nền: #F8FAFC
+    -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F8FAFC;
+            color: #1E293B;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+
+        .highlight-free {
+            background: linear-gradient(135deg, #06B6D4 0%, #3B82F6 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+        }
+
+        .badge-free {
+            background-color: #22C55E;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .step-line {
+            width: 2px;
+            background: #E2E8F0;
+            height: 30px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white py-16 px-6 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="inline-block px-4 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/30 text-cyan-400 text-sm font-bold mb-6">
+                BÁO CÁO CHIẾN LƯỢC 2025
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Từ Email đến Hệ sinh thái <span class="text-cyan-400">Digital Marketing</span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+                Phân tích thị trường Việt Nam, kỹ thuật theo dõi dữ liệu và lộ trình tối ưu cho doanh nghiệp quy mô vừa và nhỏ (Small-scale).
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 -mt-8 pb-20">
+
+        <!-- Section 1: So sánh VN vs Thế giới -->
+        <!-- Narrative: Dựa trên báo cáo, chỉ số CTR tại VN thấp (1.46%) đòi hỏi chiến lược khác biệt -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
+            <div class="lg:col-span-8 bg-white p-8 rounded-2xl shadow-xl border border-slate-100">
+                <div class="flex justify-between items-center mb-8">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-800">Chuẩn mực Thị trường 2025</h2>
+                        <p class="text-slate-500 text-sm">Việt Nam đang có xu hướng "Mobile-first" và "Social-commerce" mạnh mẽ.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-3xl font-black text-orange-500">1.46%</span>
+                        <p class="text-[10px] text-slate-400 uppercase font-bold">CTR Trung bình tại VN</p>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <canvas id="marketComparisonChart"></canvas>
+                </div>
+                
+                <div class="mt-8 p-4 bg-slate-50 rounded-xl border border-slate-100 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start gap-3">
+                        <div class="bg-blue-100 p-2 rounded-lg text-blue-600 font-bold">!</div>
+                        <p class="text-xs text-slate-600"><strong>Thách thức:</strong> CTR tại VN thấp hơn 3 lần so với quốc tế do thói quen dùng App (Shopee/TikTok) thay vì Email để mua sắm.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="bg-cyan-100 p-2 rounded-lg text-cyan-600 font-bold">✓</div>
+                        <p class="text-xs text-slate-600"><strong>Cơ hội:</strong> TikTok Shop tăng trưởng 148%. Email nên đóng vai trò "chất keo" kết nối các nền tảng này.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-4 space-y-6">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-slate-100">
+                    <h3 class="font-bold text-slate-800 mb-4">Sự thật thú vị (VN)</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-end border-b pb-2">
+                            <span class="text-sm text-slate-500">Mua sắm hàng tuần</span>
+                            <span class="text-xl font-bold text-blue-600">62.8%</span>
+                        </div>
+                        <div class="flex justify-between items-end border-b pb-2">
+                            <span class="text-sm text-slate-500">Ưu tiên TikTok Shop</span>
+                            <span class="text-xl font-bold text-blue-600">42%</span>
+                        </div>
+                        <div class="flex justify-between items-end border-b pb-2">
+                            <span class="text-sm text-slate-500">Thanh toán COD</span>
+                            <span class="text-xl font-bold text-orange-500">Top 1</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-500 to-orange-600 p-6 rounded-2xl shadow-lg text-white">
+                    <h3 class="font-bold mb-2">Định danh UID</h3>
+                    <p class="text-xs opacity-90 leading-relaxed">
+                        Email không chỉ là để gửi tin, nó là "Căn cước công dân số" để đồng bộ dữ liệu khách hàng giữa Website, Facebook và Zalo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Kỹ thuật Tracking "Under the Hood" -->
+        <!-- Narrative: Giải thích Pixel và Redirect cho Team Leader hiểu về bản chất dữ liệu -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center underline decoration-cyan-500 underline-offset-8">Bản chất kỹ thuật của Tracking</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Tracking Pixel -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-blue-500">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full">🔍</div>
+                        <h3 class="text-xl font-bold text-slate-800">Theo dõi Mở (Pixel 1x1)</h3>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-6">Một bức ảnh "vô hình" được nhúng vào cuối email. Khi ảnh tải, Server sẽ ghi nhận IP và thiết bị.</p>
+                    
+                    <div class="space-y-2">
+                        <div class="bg-slate-900 p-3 rounded-lg text-[10px] font-mono text-cyan-400 overflow-x-auto">
+                            &lt;img src="tracker.com/p.gif?uid=123" width="1" height="1"&gt;
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="step-line"></div>
+                            <div class="text-[10px] bg-blue-50 px-3 py-1 rounded-full text-blue-600 font-bold border border-blue-100 uppercase">Yêu cầu từ Browser</div>
+                            <div class="step-line"></div>
+                            <div class="text-[10px] bg-green-50 px-3 py-1 rounded-full text-green-600 font-bold border border-green-100 uppercase">Server ghi Log "Open"</div>
+                        </div>
+                    </div>
+                    <div class="mt-6 p-3 bg-red-50 rounded-lg text-[10px] text-red-600">
+                        <strong>Lưu ý:</strong> Apple MPP có thể gây ra "Open ảo" (Lượt mở máy) lên tới 100%.
+                    </div>
+                </div>
+
+                <!-- Redirect Wrapper -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-purple-500">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full">🔗</div>
+                        <h3 class="text-xl font-bold text-slate-800">Theo dõi Nhấp (Redirect)</h3>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-6">Toàn bộ link trong email được "bọc" qua một máy chủ trung gian để đếm số lượt click thực tế.</p>
+                    
+                    <div class="space-y-2">
+                        <div class="bg-slate-900 p-3 rounded-lg text-[10px] font-mono text-purple-400 overflow-x-auto">
+                            track.com/click?url=mysite.com&id=456
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="step-line"></div>
+                            <div class="text-[10px] bg-purple-50 px-3 py-1 rounded-full text-purple-600 font-bold border border-purple-100 uppercase">302 Redirect</div>
+                            <div class="step-line"></div>
+                            <div class="text-[10px] bg-green-50 px-3 py-1 rounded-full text-green-600 font-bold border border-green-100 uppercase">Đích đến với UTM tags</div>
+                        </div>
+                    </div>
+                    <div class="mt-6 p-3 bg-blue-50 rounded-lg text-[10px] text-blue-600">
+                        <strong>Ưu điểm:</strong> Độ chính xác tuyệt đối, không bị ảnh hưởng bởi quyền riêng tư của Apple.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: CÔNG CỤ FREE - RẺ (KEY REQUEST) -->
+        <!-- Narrative: Tập trung vào các giải pháp cho Small-scale doanh nghiệp -->
+        <section class="mb-12">
+            <div class="highlight-free rounded-3xl p-10 shadow-2xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-black mb-2">Góc Tiết Kiệm: Hệ sinh thái cho Small-scale</h2>
+                    <p class="text-cyan-100">Chi phí thấp, hiệu quả cao - Sẵn sàng quy mô từ 0 đến 10.000 contacts.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Tool 1 -->
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all cursor-default">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="font-bold text-xl">Brevo (Sendinblue)</h4>
+                            <span class="badge-free">Gửi Free</span>
+                        </div>
+                        <p class="text-xs text-cyan-50 mb-4 italic">"Không giới hạn số lượng contact."</p>
+                        <ul class="text-[11px] space-y-2 text-cyan-100">
+                            <li>• 300 email/ngày (Miễn phí hoàn toàn)</li>
+                            <li>• CRM tích hợp sẵn</li>
+                            <li>• Tracking Transactional cực tốt</li>
+                        </ul>
+                    </div>
+                    <!-- Tool 2 -->
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all cursor-default">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="font-bold text-xl">MailerLite</h4>
+                            <span class="badge-free">Dưới 1k subs</span>
+                        </div>
+                        <p class="text-xs text-cyan-50 mb-4 italic">"Giao diện kéo thả dễ nhất."</p>
+                        <ul class="text-[11px] space-y-2 text-cyan-100">
+                            <li>• Free 12.000 email/tháng</li>
+                            <li>• Automation (Tự động hóa) ngay bản Free</li>
+                            <li>• Landing page đơn giản đi kèm</li>
+                        </ul>
+                    </div>
+                    <!-- Tool 3 -->
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all cursor-default">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="font-bold text-xl">Haravan / Sapo</h4>
+                            <span class="badge-free">Bản Nội Địa</span>
+                        </div>
+                        <p class="text-xs text-cyan-50 mb-4 italic">"Thống trị Social Commerce tại VN."</p>
+                        <ul class="text-[11px] space-y-2 text-cyan-100">
+                            <li>• Tích hợp Zalo, TikTok Shop sâu</li>
+                            <li>• Gói khởi nghiệp chỉ từ ~200k/tháng</li>
+                            <li>• Hỗ trợ tiếng Việt 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-t border-white/10 pt-10">
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-xl">Tại sao nên chọn gói Free/Rẻ?</h4>
+                        <div class="flex gap-4">
+                            <div class="bg-orange-500 p-2 rounded-lg flex-shrink-0">💰</div>
+                            <div>
+                                <p class="text-sm font-bold">Tiết kiệm 80% ngân sách MarTech</p>
+                                <p class="text-xs text-cyan-100">Thay vì chi $500/tháng cho HubSpot, ta có thể dùng tổ hợp Free để dồn tiền cho Quảng cáo (Ads).</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="bg-orange-500 p-2 rounded-lg flex-shrink-0">📈</div>
+                            <div>
+                                <p class="text-sm font-bold">Khả năng mở rộng dễ dàng</p>
+                                <p class="text-xs text-cyan-100">Khi đạt mốc 10k subs, việc chuyển dữ liệu từ MailerLite sang các hệ thống lớn rất đơn giản qua API.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900/50 p-6 rounded-2xl border border-white/10">
+                        <h5 class="text-xs font-bold uppercase text-orange-400 mb-4">Phân tích rò rỉ dữ liệu (Honeypot Logic)</h5>
+                        <div class="chart-container !h-[200px]">
+                            <canvas id="funnelChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Lộ trình 3 giai đoạn -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col items-center text-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold mb-4">1</div>
+                <h4 class="font-bold text-lg mb-2">Nền tảng kỹ thuật</h4>
+                <p class="text-xs text-slate-500">Cấu hình DMARC/BIMI (Miễn phí) để có "Tích xanh" thương hiệu trong inbox, tăng 10% tỷ lệ mở.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col items-center text-center">
+                <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600 font-bold mb-4">2</div>
+                <h4 class="font-bold text-lg mb-2">Lọc rác bằng Honeypot</h4>
+                <p class="text-xs text-slate-500">Nhúng link ẩn để loại bỏ Bot bảo mật. Đảm bảo dữ liệu báo cáo cho Team Leader luôn "Sạch".</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col items-center text-center">
+                <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-bold mb-4">3</div>
+                <h4 class="font-bold text-lg mb-2">Cá nhân hóa theo hành vi</h4>
+                <p class="text-xs text-slate-500">Sử dụng Automation của MailerLite (Free) để gửi mail ngay khi khách bỏ giỏ hàng trên Web.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-500 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <p class="font-bold text-white mb-1">Hệ sinh thái Digital Marketing 2025</p>
+                <p class="text-xs">Dành cho buổi trình bày nội bộ Team Leader.</p>
+            </div>
+            <div class="flex gap-4">
+                <span class="text-[10px] bg-slate-800 px-3 py-1 rounded border border-slate-700 uppercase font-bold">No SVG</span>
+                <span class="text-[10px] bg-slate-800 px-3 py-1 rounded border border-slate-700 uppercase font-bold">No Mermaid JS</span>
+                <span class="text-[10px] bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded border border-cyan-800 uppercase font-bold tracking-widest">Small Scale Focus</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- HELPER: Label wrapping ---
+        const wrapLabel = (label) => {
+            if (label.length <= 16) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let current = '';
+            words.forEach(w => {
+                if ((current + w).length > 16) {
+                    lines.push(current.trim());
+                    current = w + ' ';
+                } else {
+                    current += w + ' ';
+                }
+            });
+            lines.push(current.trim());
+            return lines;
+        };
+
+        // --- GLOBAL CHART CONFIG ---
+        const tooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    return Array.isArray(label) ? label.join(' ') : label;
+                }
+            }
+        };
+
+        // --- CHART 1: MARKET COMPARISON ---
+        const ctxMarket = document.getElementById('marketComparisonChart').getContext('2d');
+        new Chart(ctxMarket, {
+            type: 'bar',
+            data: {
+                labels: ['Tỷ lệ Mở (Open)', 'Tỷ lệ Nhấp (CTR)', 'Nhấp trên Mở (CTOR)', 'Tỷ lệ Thoát (Bounce)'].map(wrapLabel),
+                datasets: [
+                    {
+                        label: 'Quốc tế (US/Global)',
+                        data: [42.0, 4.34, 9.5, 2.7],
+                        backgroundColor: '#1E3A8A',
+                        borderRadius: 6
+                    },
+                    {
+                        label: 'Việt Nam (2025)',
+                        data: [33.05, 1.46, 4.41, 1.65],
+                        backgroundColor: '#F97316',
+                        borderRadius: 6
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 10 } } },
+                    tooltip: tooltipConfig
+                },
+                scales: {
+                    y: { beginAtZero: true, ticks: { callback: v => v + '%' } },
+                    x: { ticks: { font: { size: 10 } } }
+                }
+            }
+        });
+
+        // --- CHART 2: LEAKAGE FUNNEL (SMALL SCALE) ---
+        const ctxFunnel = document.getElementById('funnelChart').getContext('2d');
+        new Chart(ctxFunnel, {
+            type: 'bar',
+            indexAxis: 'y',
+            data: {
+                labels: ['Gửi đi (Sent)', 'Thực nhận (Delivered)', 'Mở thực (Human)', 'Nhấp thực (CTR)'].map(wrapLabel),
+                datasets: [{
+                    data: [10000, 9835, 3305, 146],
+                    backgroundColor: ['rgba(255,255,255,0.1)', '#06B6D4', '#3B82F6', '#F97316'],
+                    barThickness: 20
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        ...tooltipConfig,
+                        callbacks: {
+                            ...tooltipConfig.callbacks,
+                            label: (ctx) => ` Số lượng: ${ctx.raw} Users`
+                        }
+                    }
+                },
+                scales: {
+                    x: { display: false },
+                    y: { 
+                        grid: { display: false }, 
+                        ticks: { color: '#94A3B8', font: { size: 9, weight: 'bold' } } 
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
